@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Team Update</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <header class="form-header">
+            <img src="logo.png" alt="Company Logo" class="company-logo">
+            <h1>Weekly Team Update Form</h1>
+        </header>
+
+        <p class="submission-info">
+            Please fill out this form weekly. Submission time will be logged automatically.
+        </p>
+
+        <div id="message" class="message"></div>
+
+        <form id="weeklyForm">
+            <div class="form-group">
+                <label for="teamMemberName">Your Name:</label>
+                <input
+                    type="text"
+                    id="teamMemberName"
+                    name="teamMemberName"
+                    required
+                    placeholder="e.g., Jane Doe"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="teamMemberEmail">Your Company Email:</label>
+                <input
+                    type="email"
+                    id="teamMemberEmail"
+                    name="teamMemberEmail"
+                    required
+                    placeholder="e.g., jane.doe@yourcompany.com"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="weeklyTaskProgress">Weekly Task Progress Summary:</label>
+                <textarea
+                    id="weeklyTaskProgress"
+                    name="weeklyTaskProgress"
+                    rows="5"
+                    placeholder="Summarize your key achievements, challenges, and next steps for the week."
+                ></textarea>
+            </div>
+            <div class="button-group">
+                <button type="submit" id="submitButton">Submit Form</button>
+                <button type="button" id="clearButton">Clear All Data</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
